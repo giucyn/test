@@ -1,0 +1,8 @@
+CREATE OR REPLACE PACKAGE EXAMEN.SP_PRODUCTOMALLA
+IS
+  TYPE TIPOCURSOR IS  REF CURSOR;
+   PROCEDURE SP_LISTA_MALLA_PRODUCTO (p_codproducto   IN     NUMBER,
+                                      p_estado        IN     NUMBER,
+                                      c_Listado        OUT TIPOCURSOR);
+END SP_PRODUCTOMALLA;
+/
